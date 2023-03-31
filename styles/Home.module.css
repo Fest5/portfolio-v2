@@ -1,105 +1,12 @@
-.main {
+.layout {
   background-color: var(--navy);
   min-height: 100vh;
 }
 
-.header {
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    align-items: center;
-    position: fixed;
-    top: 0px;
-    z-index: 11;
-    padding: 0px 50px;
-    width: 100%;
-    height: var(--nav-height);
-    background-color: rgba(10, 25, 47, 0.85);
-    backdrop-filter: blur(10px);
-    filter: none !important;
-    pointer-events: auto !important;
-    user-select: auto !important;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  color:  var(--lightest-slate);
-}
-
-.navOl {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  list-style: decimal;
-}
-
-.logoContainer {
-
-}
-
-.sectionListContainer {
-  display: flex;
-  align-items: center;
-}
-
-.navLi {
- margin: 0 5px;
- list-style: none;
-}
-
-.navLi a {
-  padding: 10px;
-}
-
-.counter {
-  margin-right: 5px;
-  color: var(--green);
-  font-size: var(--fz-xxs);
-  text-align: right;
-}
-
-.socialBar {
-  width: 40px;
-  position: fixed;
-  bottom: 0px;
-  left: 40px;
-  right: auto;
-  z-index: 10;
-  color: var(--light-slate);
-}
-
-.socialBarList {
-  display: flex;
-  flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-.socialBarList::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
+.main {
   margin: 0px auto;
-  background-color: var(--light-slate);
-}
-
-
-.socialBarItems a {
-  display: inline-block;
-  text-decoration: none;
-  text-decoration-skip-ink: auto;
-  color: inherit;
-  position: relative;
-}
-
-.socialBarItems a:last-of-type {
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0 150px;
 }
