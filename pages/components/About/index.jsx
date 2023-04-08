@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 
-import styles from '../../../styles/components/Introduction.module.css'
+import styles from '../../../styles/components/About.module.css'
 import { Button } from '@mui/material'
 
 
-export default function Introduction() {
+export default function About() {
   return (
     <section className={styles.introduction}>
       <div className={styles.title}>

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 
 import media from './data/media'
-import { Header, SocialBar, Introduction } from './components'
+import { Header, SocialBar, Introduction, About } from './components'
 
 export default function Home() {
 
@@ -23,6 +23,7 @@ export default function Home() {
         <SocialBar media={media}></SocialBar>
         <main className={styles.main}>
             <Introduction></Introduction>
+            <About></About>
         </main>
 
         
