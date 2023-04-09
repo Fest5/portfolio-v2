@@ -33,7 +33,8 @@
 }
 
 .logoContainer {
-
+    opacity: 0;
+    animation: opacityAnimation 2s forwards;
 }
 
 .sectionListContainer {
@@ -44,6 +45,8 @@
 .navLi {
     margin: 0 5px;
     list-style: none;
+    opacity: 0;
+    animation: opacityAnimation 2s forwards;
 }
 
 .navLi a {
@@ -61,3 +64,18 @@
     font-size: var(--fz-xxs);
     text-align: right;
 }
+
+.resume {
+    opacity: 0;
+    animation: opacityAnimation 2s forwards;
+}
+@keyframes opacityAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }

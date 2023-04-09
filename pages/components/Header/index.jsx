@@ -8,10 +8,10 @@ export default function Header({sections}) {
   return (
     <header className={styles.header}>
         <nav className={styles.nav}>
-        <div className={styles.logoContainer}>
-            <p>sadasdsa</p>
-        </div>
-        <Navbar styles={styles} sections={sections}></Navbar>
+          <div className={styles.logoContainer}>
+              <p>sadasdsa</p>
+          </div>
+          <Navbar styles={styles} sections={sections}></Navbar>
           
         </nav>
     </header>

@@ -1,24 +1,25 @@
 import React from 'react'
 import Link from 'next/link'
-
+ 
 import styles from '../../../styles/components/Introduction.module.css'
 import { Button } from '@mui/material'
 
 
-export default function Introduction() {
+export default function Introduction({content}) {
+  
   return (
     <section className={styles.introduction}>
       <div className={styles.title}>
-        <h1>Felipe Stuart</h1>
+        <h1>{content.subtitle}</h1>
       </div>
       <div className={styles.title}>
-        <h2>Software Engineer and Frontend Developer</h2>
+        <h2>{content.title}</h2>
       </div>
       <div className={styles.description}>
-        <p> I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Mercado Pago.</p>
+        <p> {content.description}</p>
       </div>
       <div className={styles.buttonContainer}>
-        <Button variant="outlined" color="success">ok</Button>
+        <Button variant="outlined" color="success">{content.buttonText}</Button>
 
       </div>
         

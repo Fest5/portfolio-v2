@@ -6,12 +6,12 @@ export default function Navbar({styles, sections}) {
     <div className={styles.sectionListContainer}>
         <ol className={styles.navOl}>
             {sections.map((section, index) => (
-                <li className={styles.navLi} key={section}>
+                <li style={{animationDelay: ` ${(100 * index)}ms`}} className={styles.navLi} key={section}>
                     <Link href={'/'}><span className={styles.counter}>0{index + 1}</span>{section}</Link>
                 </li>
             ))}
         </ol>
-        <div className={styles.resume}>Resume</div>
+        <div style={{animationDelay: '500ms'}} className={styles.resume}>Resume</div>
     </div>
   )
 }
