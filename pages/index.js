@@ -10,22 +10,27 @@ import { useEffect } from 'react';
 
 export default function Home() {
 
+
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        console.log(entry)
-        if(entry.isIntersecting) {
-          entry.target.classList.add('show')
-        } else {
-          entry.target.classList.remove('show')
-        }
+
+    const animated = document.querySelectorAll('.animated')
+
+    setTimeout(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry)
+          if(entry.isIntersecting) {
+            entry.target.classList.add('show')
+          } else {
+            entry.target.classList.remove('show')
+          }
+        })
       })
-    })
-  
-    const sections = document.querySelectorAll('section')
-    sections.forEach((node) => node.classList.add('hidden'))
-    console.log(sections)
-    sections.forEach((el) => observer.observe(el))
+    
+      
+      animated.forEach((el) => observer.observe(el))
+    }, 1000)
+    
   }, [])
 
   return (
