@@ -5,7 +5,7 @@ import { Container } from '@mui/material';
 
 import media from './data/media'
 import content from './data/content'
-import { Header, SocialBar, Introduction, About } from './components'
+import { Header, SocialBar, Introduction, About, Preloader } from './components'
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
     
       
       animated.forEach((el) => observer.observe(el))
-    }, 1000)
+    }, 12000)
     
   }, [])
 
@@ -42,6 +42,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.layout}>
+        <Preloader></Preloader>
         <Header sections={content.sections} />
         <SocialBar media={media}></SocialBar>
         <main className={styles.main}>
