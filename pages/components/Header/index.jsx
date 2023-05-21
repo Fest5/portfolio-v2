@@ -4,16 +4,16 @@ import styles from '../../../styles/components/Header.module.css'
 import Navbar from './Navbar'
 
 
-export default function Header({sections}) {
+export default function Header({sections, preloadStatus}) {
   return (
-    <header className={styles.header}>
-        <nav className={styles.nav}>
+    preloadStatus && (<header className={styles.header}>
+        <nav className={`${styles.nav} animated`}>
           <div className={styles.logoContainer}>
-              <p>sadasdsa</p>
+              <p>Logo</p>
           </div>
           <Navbar styles={styles} sections={sections}></Navbar>
           
         </nav>
-    </header>
+    </header>)
   )
 }

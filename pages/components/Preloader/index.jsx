@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import styles from '../../../styles/components/Preloader.module.css'
 
 
-export default function Preloader() {
+export default function Preloader({setPreloadStatus}) {
 
     const myRef = useRef();
 
@@ -12,9 +12,10 @@ export default function Preloader() {
 
         setTimeout(() => {
             myRef.current.classList.add(styles.delay2s)
+            setPreloadStatus(true)
         }, 5000)
     
-    }, [])
+    }, [setPreloadStatus])
 
   return (
     <div id={styles.preloaderContainer} ref={myRef}>

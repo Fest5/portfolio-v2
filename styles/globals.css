@@ -189,3 +189,7 @@ section {
     transition: none;
   }
 }
+
+.slide-up {
+  top: -80px!important;
+}

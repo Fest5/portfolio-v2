@@ -15,6 +15,7 @@
     filter: none !important;
     pointer-events: auto !important;
     user-select: auto !important;
+    transition: top 0.7s;
 }
 
 .nav {
@@ -34,7 +35,7 @@
 
 .logoContainer {
     opacity: 0;
-    animation: opacityAnimation 2s forwards;
+    animation: opacityAnimation 3s forwards;
 }
 
 .sectionListContainer {
@@ -46,7 +47,7 @@
     margin: 0 5px;
     list-style: none;
     opacity: 0;
-    animation: opacityAnimation 2s forwards;
+    animation: opacityAnimation 3s forwards;
 }
 
 .navLi a {
@@ -67,11 +68,11 @@
 
 .resume {
     opacity: 0;
-    animation: opacityAnimation 2s forwards;
+    animation: opacityAnimation 3s forwards;
 }
 @keyframes opacityAnimation {
     0% {
-      opacity: 0;
+      opacity: 1;
       transform: translateY(-20px);
     }
     100% {
